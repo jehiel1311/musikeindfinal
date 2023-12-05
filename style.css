@@ -1,0 +1,432 @@
+
+/* FONT ESTILOS  */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');  */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap');
+
+
+body,
+h1,
+h2,
+p {
+  font-family: 'Barlow', sans-serif;
+
+}
+h2 {
+    font-size: xx-large;
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: aliceblue;
+    font-size:xxx-large;
+} 
+
+
+p, h3 {
+    color: aliceblue;
+    font-size: x-large;
+    
+}
+
+
+/* --------------- MENU WEB --------------- */
+
+.menu-web {
+    background-color:rgba(0, 0, 0, 0.61);
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    height: 140px;
+    width: 100%;
+    justify-content: space-around;
+    text-align: end;
+    padding: 15px 5px;
+    position: fixed; 
+}
+
+nav a {
+
+color: rgb(224, 224, 224);
+
+}
+
+a {
+    padding: 0px 15px;
+    text-decoration: none;
+}
+.nav-principal{
+    padding: 10px 40px;
+}
+
+.nav-principal a:hover {
+    color: orange; 
+    border-bottom: 2px solid orange;
+
+}
+
+.nav-principal a:active {
+    color: rgb(229, 255, 0); 
+}
+
+.logo1 {
+    max-height: 160px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: -40px;
+}
+
+@media (min-width: 768px) { 
+    .menu-mobile {
+        display: none;
+    }   
+
+
+    .menu-web{
+        display: block;
+    }
+}
+
+
+
+/* --------------- MENU MOBILE --------------- */
+
+@media (max-width: 767px) { 
+    
+    .menu-web  {
+        display: none;
+    }
+
+    .menu-mobile {
+        padding: 0 40px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #000;
+        align-items: center;
+        
+    }
+    .logo-mobile {
+        max-width: 200px;
+    }
+    .la-bars {
+        color:#ffffff;
+        font-size: xxx-large;
+    }
+
+   
+
+    .nav-principal-mobile {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 0;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        clip-path: circle(0% at top left);
+        transition: clip-path .4s;       
+    }
+    .nav-x {
+        color: red;
+        font-size: xxx-large;
+        font-weight: bold;
+        display: flex;
+        position: relative;
+        left: 35%;
+        top: -12%;
+    }
+
+
+    .nav-mobile {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: x-large;
+    }
+    .nav-mobile:hover {
+        color: orange;
+        font-size: x-large;
+    }
+    .nav-principal-mobile:target {
+       
+         clip-path: circle(150% at top left);            
+   }
+   
+        
+}
+
+
+
+/* --------------- INICIO --------------- */
+
+.seccion-inicio {
+    background-image: url(./recursos/fondo\ 02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;     
+}
+
+
+
+.boton-accion {
+
+    background-color: rgba(179, 161, 137, 0.596);
+    padding: 10px 25px;
+    border-radius: 5px;
+
+}
+
+.seccion-inicio a {
+    color: rgb(232, 253, 3);
+    border: 2px solid rgb(232, 253, 3);
+    padding: 10px 15px;
+ 
+}
+
+.seccion-inicio a:hover {
+    background-color: rgb(232, 253, 3);
+    color: #000;
+} 
+
+.seccion-inicio p {
+    border: 0px;
+    padding: 15px;
+}
+
+
+
+/* ---------------PRESENTACION------------------------*/
+
+
+.seccion-prensetacion {
+
+    background-color: rgb(100, 100, 92);
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content:space-around;
+    padding: 60px 50px;
+    flex-wrap: wrap;    
+    color:antiquewhite;
+}
+
+.gorra2 {
+    max-height: 400px;
+    max-width: 100%;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+}
+
+
+.seccion-prensetacion h2 {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+ }
+
+
+/* ---------------TITULO GORRAS------------------------*/
+
+ .titulo-gorras h2 {
+    color: rgb(150, 119, 19);
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+ }
+
+ .titulo-gorras {
+    background-color: beige;
+    height: 75px;
+ }
+
+
+/* ---------------SECCION GORRAS------------------------*/
+
+
+main p{
+    font-size: medium;
+    
+ }
+
+
+
+.seccion-gorras {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+    
+    
+}
+
+.gorra1 {
+    height: 300px;
+    width: auto;
+    padding: 5px 5px;
+    background-color: antiquewhite;
+    
+}
+
+
+.contenedor-gorras {
+
+    height: auto;
+    width: 330px;
+    padding: 25px 15px;
+    background-color: rgba(158, 155, 151, 0.473);
+    margin: 15px 15px; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+
+.contenedor-gorras:hover {
+
+    background-color: rgba(255, 209, 4, 0.473);
+    
+}
+
+.contenedor-gorras img:hover {
+
+
+    background-color: rgba(255, 209, 4, 0.473);
+    
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+   
+}
+
+button:hover {
+    background-color: rgb(73, 73, 72);
+    color: #ffffff;
+}
+
+.buy {
+    font-size: 50px;
+    padding: 0px 4px;
+    color:antiquewhite;
+    
+} 
+.seccion-compra {
+display: flex;
+align-items: center;
+
+}
+.precio {
+    font-size:x-large;
+    margin: 10px 160px;
+    
+}
+
+
+
+/* ---------------NOSOTROS------------------------*/
+
+
+.seccion-nosotros {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 25px;   
+}
+
+
+.seccion-nosotros h1 {
+    color: orange; 
+}
+
+
+.seccion-nosotros p {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+strong {
+    color: orange; 
+}
+
+em {
+    font-style: italic;
+    color: rgb(138, 93, 9);
+}
+
+
+/* ------------- FOOTER ------------------- */
+
+
+footer {
+    background-color: #000;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 20px 20px;
+    margin: 0%;
+    align-items: center;
+    justify-content:space-around;
+}
+footer img {
+    width:  auto;
+    height: 120px;
+}
+
+
+.seccion-footer-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+        
+}
+.seccion-footer-menu a{
+    padding: 10px ;
+   
+    
+}
+
+.seccion-footer-menu a:hover{
+    color: orange;
+      
+}
+
+
+.icono-redes {
+    font-size: 40px;
+    color: rgb(229, 255, 0);
+    display: flex;
+}
+
+
+@media (max-width: 767px) { 
+    
+    footer {
+            display: flex;
+            flex-direction: column; 
+            gap: 100px;            
+    }    
+
+}
